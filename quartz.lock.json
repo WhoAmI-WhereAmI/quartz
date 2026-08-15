@@ -1,0 +1,17 @@
+{
+  "version": "1.0.0",
+  "plugins": {
+    "quartz-article-title": {
+      "source": "github:WhoAmI-WhereAmI/quartz-article-title",
+      "resolved": "https://github.com/WhoAmI-WhereAmI/quartz-article-title.git",
+      "commit": "d82748017df377d52fb0bc1a0f6813371baafe4f",
+      "installedAt": "2026-11-10T07:12:14.007Z"
+    },
+    "quartz-comments": {
+      "source": "github:WhoAmI-WhereAmI/quartz-comments",
+      "resolved": "https://github.com/WhoAmI-WhereAmI/quartz-comments.git",
+      "commit": "e7c39cfb64b99430d66d4eb6b3d4f1c28ddefca0",
+      "installedAt": "2026-11-10T07:11:51.518Z"
+    }
+  }
+}
