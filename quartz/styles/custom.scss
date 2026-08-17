@@ -2,6 +2,41 @@
 
 // put your custom CSS here!
 
+.center > article {
+  :not(h1, h2, h3, hr) + :is(h2, h3) {
+    margin-top: 3rem;
+  }
+}
+
 .table-container {
   justify-items: center; //tables default to center
+}
+
+// The Things theme applies the body font to KaTeX's HTML output. Inherit the
+// font from `.katex` instead, restoring KaTeX's bundled default math fonts.
+.katex > .katex-html {
+  font-family: inherit;
+}
+
+// Explorer and ToC use a fixed collapsed height. It can be shorter than the
+// themed header after its font loads, which clips the header itself.
+@media all and (min-width: 801px) {
+  .explorer.collapsed,
+  .toc:has(> .toc-header.collapsed) {
+    flex: 0 0 auto;
+  }
+
+  .explorer.collapsed > .explorer-content,
+  .toc > .toc-content.collapsed {
+    display: none;
+  }
+}
+
+html {
+  font-size: 15px;
+}
+
+// Remove the yellow background only when the internal link is not being hovered.
+a.internal.internal-link:not(:hover) {
+  background-color: transparent;
 }
