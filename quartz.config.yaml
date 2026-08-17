@@ -99,9 +99,9 @@ plugins:
     enabled: false
     order: 92
   - source: "@quartz-themes/core"
-    enabled: false
+    enabled: true
     options:
-      theme: tokyo-night
+      theme: things
       mode: both
   - source: "@quartz-community/explicit-publish"
     enabled: false
@@ -186,6 +186,8 @@ plugins:
       position: beforeBody
       priority: 5
       condition: not-index
+    options:
+      showCurrentPage: false
   - source: github:WhoAmI-WhereAmI/quartz-comments
     enabled: true
     options:
